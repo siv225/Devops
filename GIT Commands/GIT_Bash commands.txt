@@ -1,0 +1,208 @@
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~ (master)
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ Mypolicy.json
+ NTUSER.DAT
+ NTUSER.DAT{98ae638f-a766-11eb-9c6a-b8f589d9dd5b}.TM.blf
+ NTUSER.DAT{98ae638f-a766-11eb-9c6a-b8f589d9dd5b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{98ae638f-a766-11eb-9c6a-b8f589d9dd5b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ anaconda3/
+ java_error_in_pycharm_6612.log
+ java_error_in_pycharm_9368.log
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ python/
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~ (master)
+$ pwd
+/c/Users/SNL
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~ (master)
+$ mkdir devops
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~ (master)
+$ cd devops/
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops (master)
+$ git clone https://github.com/deepuashokan85/devops-2021.git
+Cloning into 'devops-2021'...
+warning: You appear to have cloned an empty repository.
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops (master)
+$ ls
+devops-2021/
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops (master)
+$ cd devops-2021/
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (master)
+$ ls
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (master)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 211 bytes | 1024 bytes/s, done.
+From https://github.com/deepuashokan85/devops-2021
+ * [new branch]      main       -> origin/main
+Your configuration specifies to merge with the ref 'refs/heads/master'
+from the remote, but no such ref was fetched.
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (master)
+$ ls
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (master)
+$ git checkout main
+Switched to a new branch 'main'
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ ls
+README.md
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 275 bytes | 0 bytes/s, done.
+From https://github.com/deepuashokan85/devops-2021
+   e1ff7aa..582beb1  main       -> origin/main
+Updating e1ff7aa..582beb1
+Fast-forward
+ pradeep.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pradeep.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ vi siv225.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ ls
+README.md  pradeep.txt  siv225.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git add siv225.txt
+warning: LF will be replaced by CRLF in siv225.txt.
+The file will have its original line endings in your working directory
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   siv225.txt
+
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git commit -m "first commit"
+[main b1edcef] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 siv225.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 21.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/deepuashokan85/devops-2021.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 9e70a89fe56022eee44986542cfa8194950c6e5e but expected 582beb12c7ad6a0020be9b2724e90cc40f5c7d5c)
+error: failed to push some refs to 'https://github.com/deepuashokan85/devops-2021.git'
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ ^C
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 320 bytes | 2.00 KiB/s, done.
+From https://github.com/deepuashokan85/devops-2021
+   582beb1..9e70a89  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ rajk.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rajk.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ ls
+README.md  pradeep.txt  rajk.txt  siv225.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git push status
+fatal: 'status' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git push -u origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 553 bytes | 110.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/deepuashokan85/devops-2021.git
+   9e70a89..b86a570  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ ls
+README.md  pradeep.txt  rajk.txt  siv225.txt
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
+$ git branch
+* main
+
+SNL@DESKTOP-EJEUC6V MINGW64 ~/devops/devops-2021 (main)
